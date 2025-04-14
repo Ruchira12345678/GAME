@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io("https://your-backend.onrender.com"); // Example backend URL
 const room = prompt("Enter a room name to join:");
 socket.emit("joinRoom", room);
 
