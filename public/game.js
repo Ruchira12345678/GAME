@@ -1,4 +1,5 @@
-const socket = io("https://game23.vercel.app"); // Example backend URL
+const socket = io();
+// Example backend URL
 const room = prompt("Enter a room name to join:");
 socket.emit("joinRoom", room);
 
